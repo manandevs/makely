@@ -6,6 +6,9 @@ import Link from "next/link";
 export default function SampleProfile({ artist }) {
   const [showContact, setShowContact] = useState(false);
 
+  // Safety check if data is loading
+  if (!artist) return <div>Loading...</div>;
+
   return (
     <div className="min-h-screen bg-white px-6 py-16 max-w-[1000px] mx-auto">
       {/* Header */}
@@ -88,7 +91,7 @@ export default function SampleProfile({ artist }) {
         <p className="text-sm text-gray-500 mb-2">Follow:</p>
         <div className="flex justify-center space-x-6 text-gray-700 text-lg">
           {Object.entries(artist.social).map(([platform, url], idx) => (
-            <a
+            <Link
               key={idx}
               href={url}
               target="_blank"
@@ -96,7 +99,7 @@ export default function SampleProfile({ artist }) {
               className="hover:text-black transition"
             >
               {platform}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -104,7 +107,6 @@ export default function SampleProfile({ artist }) {
   );
 }
 
-// Load artist data from JSON
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "public", "sample-artist.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");

@@ -2,12 +2,12 @@
   "name": "Jane Doe",
   "bio": "Multidisciplinary artist based in Berlin. Exploring emotions through abstract forms.",
   "images": [
-    "/art1.jpg",
-    "/art2.jpg",
-    "/art3.jpg",
-    "/art4.jpg",
-    "/art5.jpg",
-    "/art6.jpg"
+    "/1.png",
+    "/2.png",
+    "/3.png",
+    "/4.png",
+    "/5.png",
+    "/6.png"
   ],
   "social": {
     "Instagram": "https://instagram.com/janedoe",

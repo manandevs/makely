@@ -2,12 +2,9 @@
   "name": "Jane Doe",
   "bio": "Multidisciplinary artist based in Berlin. Exploring emotions through abstract forms.",
   "images": [
-    "/art1.jpg",
-    "/art2.jpg",
-    "/art3.jpg",
-    "/art4.jpg",
-    "/art5.jpg",
-    "/art6.jpg"
+    "/1.png",
+    "/2.png",
+    "/3.png"
   ],
   "social": {
     "Instagram": "https://instagram.com/janedoe",
@@ -15,10 +12,20 @@
   },
   "contact": {
     "email": "janedoe@example.com",
-    "mobile": { "code": "+49", "number": "123456789" },
-    "whatsapp": { "code": "+49", "number": "987654321" },
+    "mobile": {
+      "code": "+49",
+      "number": "123456789"
+    },
+    "whatsapp": {
+      "code": "+49",
+      "number": "987654321"
+    },
     "location": "Berlin, Germany"
   },
-  "exhibitions": ["Solo Exhibition at ART HQ, 2022"],
-  "awards": ["Emerging Artist Prize, 2023"]
+  "exhibitions": [
+    "Solo Exhibition at ART HQ, 2022"
+  ],
+  "awards": [
+    "Emerging Artist Prize, 2023"
+  ]
 }
